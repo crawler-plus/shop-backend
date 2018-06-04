@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-service-addr/micro-service-addr.iml" filepath="$PROJECT_DIR$/micro-service-addr/micro-service-addr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-service-address/micro-service-address.iml" filepath="$PROJECT_DIR$/micro-service-address/micro-service-address.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-service-cart/micro-service-cart.iml" filepath="$PROJECT_DIR$/micro-service-cart/micro-service-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-service-order/micro-service-order.iml" filepath="$PROJECT_DIR$/micro-service-order/micro-service-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-service-product/micro-service-product.iml" filepath="$PROJECT_DIR$/micro-service-product/micro-service-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-service-user/micro-service-user.iml" filepath="$PROJECT_DIR$/micro-service-user/micro-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-backend.iml" filepath="$PROJECT_DIR$/shop-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
+    </modules>
+  </component>
+</project>

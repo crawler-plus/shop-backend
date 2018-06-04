@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+        <module name="micro-service-addr" />
+        <module name="micro-service-cart" />
+        <module name="micro-service-order" />
+        <module name="micro-service-product" />
+        <module name="micro-service-user" />
+        <module name="zuul-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="core" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="micro-service-addr" target="1.8" />
+      <module name="micro-service-cart" target="1.8" />
+      <module name="micro-service-order" target="1.8" />
+      <module name="micro-service-product" target="1.8" />
+      <module name="micro-service-user" target="1.8" />
+      <module name="shop-backend" target="1.8" />
+      <module name="zuul-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: micro-service-product
+server:
+  port: 2001
+  address: 127.0.0.1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:1000/eureka/
+    enabled: true
+  instance:
+    hostname: ${server.address}
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+master:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shop-backend?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: 12345678
+  enable: true

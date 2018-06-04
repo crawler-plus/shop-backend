@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.it4u.product.dao.ProductMapper" >
+
+    <select id="listProducts" resultType="site.it4u.product.domain.Product" parameterType="site.it4u.product.dto.ProductParamDTO">
+        SELECT id,
+        product_id AS productId,
+        product_name AS productName,
+        sale_price AS salePrice,
+        product_image AS productImage
+        FROM t_product
+        <choose>
+            <when test="priceChecked == '0'.toString()">
+                WHERE sale_price BETWEEN 0 AND 100
+            </when>
+            <when test="priceChecked == '1'.toString()">
+                WHERE sale_price BETWEEN 100 AND 500
+            </when>
+            <when test="priceChecked == '2'.toString()">
+                WHERE sale_price BETWEEN 500 AND 1000
+            </when>
+            <when test="priceChecked == '3'.toString()">
+                WHERE sale_price BETWEEN 1000 AND 5000
+            </when>
+        </choose>
+        <choose>
+            <when test="sort == 1">
+                ORDER BY sale_price ASC
+            </when>
+            <otherwise>
+                ORDER BY sale_price DESC
+            </otherwise>
+        </choose>
+    </select>
+
+</mapper>

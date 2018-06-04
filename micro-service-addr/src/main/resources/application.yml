@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: micro-service-addr
+server:
+  port: 2002
+  address: 127.0.0.1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:1000/eureka/
+    enabled: true #作为eureka的客户端（如需要注册到eureka服务器，要设置为true）
+  instance:
+    hostname: ${server.address}
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+
+master:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shop-backend?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: 12345678
+  enable: true
